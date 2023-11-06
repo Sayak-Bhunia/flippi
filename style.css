@@ -80,6 +80,41 @@ section {
   color: #8d99ae;
 }
 
+.column-left h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #1d3557;
+  overflow: hidden;
+  border-right: 2px solid #8d99ae;
+  animation: typing-animation 6s steps(40) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #8d99ae;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column-left h2 {
+    white-space: normal;
+  }
+}
+
 .column-left p {
   margin-bottom: 2rem;
   font-size: 1.5rem;
